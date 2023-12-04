@@ -1,0 +1,58 @@
+.errorPage {
+
+    .errorContainer {
+
+        background-color: var(--gray-100);
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+
+        h3 {
+            color: var(--gray-900);
+            font-size: var(--h1-font-size);
+            text-align: center;
+        }
+
+        p {
+            color: var(--gray-700);
+            font-size: var(--h2-font-size);
+
+            a {
+                color: var(--primary-color-light);
+                font-style: italic;
+                transition: all .3s ease;
+
+                &:hover{
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .errorContainer {
+            height: 60vh;
+
+
+            h3 {
+                font-size: var(--big-font-size);
+            }
+
+            p {
+                font-size: var(--h1-font-size);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .errorContainer {
+            height: 55vh;
+        }
+    }
+}

@@ -1,0 +1,945 @@
+.AboutInfo {
+    background-color: var(--gray-100);
+
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-top: 50px;
+
+        .principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+            gap: 50px;
+
+            .image {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                .title {
+                    text-align: center;
+                    font-size: var(--h1-font-size);
+                    font-weight: var(--font-semi-bold);
+                    text-transform: uppercase;
+                }
+
+                .imgContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    img {
+                        width: 345px;
+                        height: 440px;
+                        object-fit: cover;
+                    }
+
+                    .principal-title {
+                        background-color: var(--secondary-color);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 15px 25px;
+                        color: var(--gray-100);
+                        gap: 5px;
+                        width: 350px;
+                        position: absolute;
+                        bottom: -25px;
+
+                        .name {
+                            font-size: var(--h3-font-size);
+                            font-weight: var(--font-semi-bold);
+                            text-align: center;
+                        }
+
+                        .honors {
+                            font-weight: var(--font-medium);
+                            font-size: var(--normal-font-size);
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .caption {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                .title {
+                    text-align: center;
+                    font-size: var(--h1-font-size);
+                    font-weight: var(--font-semi-bold);
+                    text-transform: uppercase;
+                    display: none;
+                }
+
+                .body {
+                    text-align: center;
+                    font-size: var(--normal-font-size);
+                    font-weight: var(--font-regular);
+                    max-width: 350px;
+                }
+
+                a {
+                    button {
+                        background-color: var(--primary-color);
+                        border-radius: 10px;
+                        padding: 15px 25px;
+                        font-size: var(--normal-font-size);
+                        color: var(--gray-100);
+                        font-weight: var(--font-regular);
+                        outline: none;
+                        border: 2px solid transparent;
+                        cursor: pointer;
+                        transition: all .3s ease;
+                        
+                        &:hover {
+                            color: var(--secondary-color);
+                            border: 2px solid var(--secondary-color);
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .schoolInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+            gap: 50px;
+
+            .images {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+
+                .title {
+                    text-align: center;
+                    font-size: var(--h1-font-size);
+                    font-weight: var(--font-semi-bold);
+                    text-transform: uppercase;
+                }
+
+                .imgsContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    .imgLg {
+                        width: 345px;
+                        height: 230px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .imgSmGroup {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+
+                        img {
+                            width: 160px;
+                            height: 140px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            .caption {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                .title {
+                    text-align: center;
+                    font-size: var(--h1-font-size);
+                    font-weight: var(--font-semi-bold);
+                    text-transform: uppercase;
+                    display: none;
+                }
+
+                .body {
+                    text-align: center;
+                    font-size: var(--normal-font-size);
+                    font-weight: var(--font-regular);
+                    max-width: 350px;
+                }
+
+            }
+        }
+
+        .mishVish {
+            background-color: var(--primary-color);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px 50px;
+            gap: 50px;
+
+            .section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                margin-top: 30px;
+
+                .image {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 50px;
+
+                    .title {
+                        text-align: center;
+                        font-size: var(--h1-font-size);
+                        font-weight: var(--font-semi-bold);
+                        text-transform: uppercase;
+                        color: var(--gray-100);
+                    }
+
+                    .imgContainer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+
+                        .imgBackdrop {
+                            width: 300px;
+                            height: 280px;
+                            background-color: var(--primary-color-light);
+                            position: relative;
+                            left: 14px;
+                        }
+
+                        img {
+                            width: 305px;
+                            height: 275px;
+                            object-fit: cover;
+                            position: absolute;
+                            top: 24px;
+                            right: 10px;
+                            z-index: var(--z-tooltip);
+                        }
+                    }
+                }
+
+                .caption {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+
+                    .title {
+                        text-align: center;
+                        font-size: var(--h1-font-size);
+                        font-weight: var(--font-semi-bold);
+                        text-transform: uppercase;
+                        color: var(--gray-100);
+                        display: none;
+                    }
+
+                    .body {
+                        text-align: center;
+                        font-size: var(--normal-font-size);
+                        font-weight: var(--font-regular);
+                        color: var(--gray-300);
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+
+        .team {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--primary-color);
+                width: 100%;
+                padding: 50px 30px;
+
+                span {
+                    text-align: center;
+                    font-size: var(--h1-font-size);
+                    font-weight: var(--font-semi-bold);
+                    text-transform: uppercase;
+                    color: var(--gray-100);
+                }
+            }
+
+            .body {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                align-items: center;
+
+                .adminItems {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: var(--z-tooltip);
+
+                    .adminItem {
+                        width: 42%;
+                        height: 200px;
+                        position: relative;
+                        bottom: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        transition: all .3s ease;
+                        overflow: hidden;
+                        cursor: pointer;
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: all 1s ease;
+                        }
+
+                        .details {
+                            background-color: hsla(199, 100%, 33%, 0.824);
+                            position: absolute;
+                            bottom: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 80%;
+                            gap: 5px;
+                            padding: 10px;
+                            text-align: center;
+                            transition: all .5s ease;
+
+
+                            .name {
+                                color: var(--gray-100);
+                                font-size: var(--normal-font-size);
+                                font-weight: var(--font-medium);
+                                text-shadow: -2px 1px 12px rgba(0, 0, 0, 0.536);
+                            }
+                            
+                            .role {
+                                color: var(--gray-300);
+                                font-size: var(--small-font-size);
+                                text-shadow: -2px 1px 12px rgba(0, 0, 0, 0.536);
+                            }
+                        }
+
+                        &:hover {
+                            img{
+                                transform: rotate(2deg) scale(1.05);
+                            }
+
+                            .details {
+                                transform: scale(1.1) translateY(-10px);
+                                border-radius: 5px;
+                                background-color: hsla(199, 91%, 44%, 0.86);
+                            }
+                        }
+                    }
+                }
+
+                .bodyBottom {
+                    width: 100%;
+                    height: 90px;
+                    background-color: var(--primary-color);
+                    position: relative;
+                    bottom: 100px;
+                }
+            }
+        }
+
+        .achievements {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 0 20px 50px;
+            margin-top: -100px;
+
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                span {
+                    text-align: center;
+                    font-size: var(--h1-font-size);
+                    font-weight: var(--font-semi-bold);
+                    text-transform: uppercase;
+                }
+            }
+
+            .achi-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                // box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.148);
+                margin: 10px auto 30px;
+                // padding: 10px;
+                border-radius: 5px;
+                width: 320px;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .achi-title {
+                    color: var(--gray-900);
+                    font-size: var(--h3-font-size);
+                    font-weight: var(--font-semi-bold);
+                    // margin: 0 10px;
+                }
+
+                .body {
+                    color: var(--gray-900);
+                    font-size: var(--normal-font-size);
+                    font-weight: var(--font-regular);
+                    // max-width: 260px;
+                    // margin: 0 10px 10px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .aboutContainer {
+
+            .principal {
+
+                .image {
+
+                    .title {
+                        font-size: var(--h2-font-size);
+                    }
+
+                    .imgContainer {
+
+                        img {
+                            width: 220px;
+                            height: 280px;
+                        }
+
+                        .principal-title {
+                            width: 250px;
+                            padding: 10px;
+
+                            .name {
+                                font-size: var(--normal-font-size);
+                            }
+
+                            .honors {
+                                font-size: var(--small-font-size);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .schoolInfo {
+
+                .images {
+
+                    .title {
+                        font-size: var(--h2-font-size);
+                    }
+
+                    .imgsContainer {
+
+                        .imgLg {
+                            width: 250px;
+                            height: 160px;
+
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+
+                        .imgSmGroup {
+                            flex-direction: column;
+
+                            img {
+                                width: 250px;
+                                height: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mishVish {
+
+                .section {
+
+                    .image {
+
+                        .title {
+                            font-size: var(--h2-font-size);
+                        }
+
+                        .imgContainer {
+
+                            .imgBackdrop {
+                                width: 220px;
+                                height: 200px;
+                            }
+
+                            img {
+                                width: 220px;
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .team {
+
+                .title {
+
+                    span {
+                        font-size: var(--h2-font-size);
+                    }
+                }
+
+                .body {
+
+                    .adminItems {
+
+                        .adminItem {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .achievements {
+                margin-top: -100px;
+
+                .title {
+
+                    span {
+                        font-size: var(--h2-font-size);
+                    }
+                }
+
+                .achi-item {
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .aboutContainer {
+
+            .principal {
+                flex-direction: row-reverse;
+                justify-content: center;
+
+                .image {
+
+                    .title {
+                        display: none;
+                    }
+                }
+
+                .caption {
+                    align-items: flex-start;
+
+                    .title {
+                        display: block;
+                    }
+
+                    .body {
+                        text-align: left;
+                    }
+
+                    a {
+
+                        button {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+
+            .schoolInfo {
+                width: 100%;
+
+                .images {
+                    width: 100%;
+
+                    .imgsContainer {
+                        width: 100%;
+                        flex-direction: row;
+                        overflow: hidden;
+
+                        .imgLg {
+                            height: 300px;
+                        }
+
+                        .imgSmGroup {
+                            flex-direction: column;
+
+                            img {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+
+                .caption {
+                    width: 615px;
+
+                    .body {
+                        max-width: max-content;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .mishVish {
+                gap: 0;
+
+                .section {
+                    gap: 100px;
+                    flex-direction: row-reverse;
+
+                    &.bottom {
+                        flex-direction: row;
+
+                        .image {
+
+                            .imgContainer {
+                                bottom: -70px;
+                            }
+                        }
+                    }
+
+                    .image {
+
+                        .title {
+                            display: none;
+                        }
+
+                        .imgContainer {
+                            bottom: 70px;
+
+                            .imgBackdrop {
+                                width: 320px;
+                                height: 300px;
+                            }
+
+                            img {
+                                width: 320px;
+                                height: 295px;
+                            }
+                        }
+                    }
+
+                    .caption {
+                        align-items: flex-start;
+
+                        .title {
+                            display: block;
+                        }
+
+                        .body {
+                            text-align: left;
+                            max-width: 300px;
+                        }
+                    }
+                }
+            }
+
+            .team {
+
+                .body {
+
+                    .adminItems {
+
+                        .adminItem {
+                            height: 390px;
+
+                            .details {
+                                width: 250px;
+                                height: 150px;
+
+                                .name {
+                                    font-size: var(--h2-font-size);
+                                }
+
+                                .role {
+                                    font-size: var(--h3-font-size);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .aboutContainer {
+
+            .principal {
+
+                .caption {
+
+                    .title {
+                        font-size: var(--big-font-size);
+                    }
+
+                    .body {
+                        font-size: var(--h3-font-size);
+                    }
+                }
+            }
+
+            .schoolInfo {
+                flex-direction: row;
+                justify-content: center;
+
+                .images {
+                    width: auto;
+
+                    .title {
+                        display: none;
+                    }
+
+                    .imgsContainer {
+
+
+                        .imgLg {
+                            width: 200px;
+                        }
+
+                        .imgSmGroup {
+
+                            img {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+
+                .caption {
+                    align-items: flex-start;
+                    width: auto;
+
+                    .title {
+                        display: block;
+                        text-align: left;
+                    }
+
+                    .body {
+                        max-width: 665px;
+                    }
+                }
+            }
+
+            .mishVish {
+
+                .section {
+
+                    .image {
+
+                        .imgContainer {
+
+                            .imgBackdrop {
+                                width: 380px;
+                                height: 360px;
+                            }
+
+                            img {
+                                width: 380px;
+                                height: 355px;
+                            }
+                        }
+                    }
+
+                    .caption{
+
+                        .body{
+                            max-width: 360px;
+                        }
+                    }
+                }
+            }
+
+            .team {
+
+                .body {
+
+                    .adminItems {
+
+                        .adminItem {
+                            width: 28%;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1244px) {
+
+        .aboutContainer {
+
+            .principal {
+                justify-content: space-evenly;
+                gap: 0;
+
+                .image {
+
+                    .imgContainer {
+
+                        img {
+                            width: 420px;
+                            height: 525px;
+                        }
+                    }
+                }
+
+                .caption {
+
+                    .title {
+                        font-size: var(--big-font-size);
+                    }
+
+                    .body {
+                        max-width: 460px;
+                        font-size: var(--h2-font-size);
+                    }
+
+                    a {
+                        button {
+                            font-size: var(--h3-font-size);
+                        }
+                    }
+                }
+            }
+
+            .schoolInfo {
+                justify-content: space-evenly;
+
+                .caption {
+
+                    .title {
+                        font-size: var(--big-font-size);
+                    }
+
+                    .body {
+                        font-size: var(--h3-font-size);
+                    }
+                }
+            }
+
+            .mishVish {
+
+                .section {
+
+                    .image {
+
+                        .imgContainer {
+
+                            .imgBackdrop {
+                                width: 400px;
+                                height: 380px;
+                            }
+
+                            img {
+                                width: 400px;
+                                height: 385px;
+                            }
+                        }
+                    }
+
+                    .caption {
+
+                        .title {
+                            font-size: var(--big-font-size);
+                        }
+
+                        .body {
+                            font-size: var(--h3-font-size);
+                            max-width: 400px;
+                        }
+                    }
+                }
+            }
+
+            .team {
+
+                .title {
+                    padding: 60px 30px;
+
+                    span {
+                        font-size: var(--big-font-size);
+                    }
+                }
+
+                .body {
+
+                    .adminItems {
+                        gap: 40px;
+
+                        .adminItem {
+                            width: 25%;
+                            height: 380px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

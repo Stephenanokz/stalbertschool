@@ -1,0 +1,48 @@
+.banner {
+    // margin-top: 70px;
+    padding: 80px 20px 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(248, 46%, 16%, 0.914) 60%, hsla(199, 97%, 29%, 0.834) 100%), url("https://notredameacademyenugu.com/assets/images/secondary.jpg");
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: var(--gray-100);
+    gap: 20px;
+
+    .title {
+        font-size: var(--big-font-size);
+        font-weight: var(--font-bold);
+        font-family: var(--sans-family);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-transform: capitalize;
+        // font-style: italic;
+        font-size: var(--normal-font-size);
+        text-align: center;
+        font-weight: 300;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 40vh;
+
+        .title {
+            font-size: var(--biggest-font-size);
+        }
+
+        .subtitle {
+            font-size: var(--h2-font-size);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 45vh;
+    }
+}
