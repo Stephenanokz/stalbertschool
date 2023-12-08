@@ -53,32 +53,46 @@ const Blog = () => {
   ) : (
     <div className="blog" id="blog">
       <div className="top">
-        <span data-aos="fade-up" data-aos-duration="1000" className="title">Our Blog</span>
+        <span data-aos="fade-up" data-aos-duration="1000" className="title">
+          Our Blog
+        </span>
         <span data-aos="fade-up" data-aos-duration="1000" className="subTitle">
           Stay updated on news, events and school activities
         </span>
       </div>
       <div className="bottom">
         <div className="blogContainer">
-          {filteredPosts?.map((post) => (
-            <Link key={post?._id} to={`/blog/${post?._id}`}>
-              <div data-aos="fade-up" data-aos-duration="1000" className="blogItem">
-                <img src={post?.imgs[0]} alt="" />
-                <span className="title">{truncateString(post?.title, 30)}</span>
-                <span className="body">{truncateString(post?.body, 100)}</span>
-                <div className="utils">
-                  <span className="left">
-                    {post?.updatedAt?.slice(0, 10)} | 7 min read
+          {posts.length <= 0 ? (
+            <h3>Nothing here. No news posted!</h3>
+          ) : (
+            filteredPosts?.map((post) => (
+              <Link key={post?._id} to={`/blog/${post?._id}`}>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="blogItem"
+                >
+                  <img src={post?.imgs[0]} alt="" />
+                  <span className="title">
+                    {truncateString(post?.title, 30)}
                   </span>
-                  {/* <div className="right">
+                  <span className="body">
+                    {truncateString(post?.body, 100)}
+                  </span>
+                  <div className="utils">
+                    <span className="left">
+                      {post?.updatedAt?.slice(0, 10)} | 7 min read
+                    </span>
+                    {/* <div className="right">
                   <ThumbUpOutlinedIcon className="icon" />
                   <ChatBubbleOutlineOutlinedIcon className="icon" />
                   <ShareOutlinedIcon className="icon" />
                 </div> */}
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))
+          )}
         </div>
         <Link to="/blog">
           <button>View all posts</button>

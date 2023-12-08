@@ -67,6 +67,8 @@ const BlogInfo = () => {
               visible={true}
             />
           </div>
+        ) : posts.length <= 0 ? (
+          <h3>Nothing here. No news posted!</h3>
         ) : (
           currentPosts.map((post) => (
             <div key={post._id} className="blogItem">

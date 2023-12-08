@@ -9,8 +9,8 @@ import { ThreeCircles } from "react-loader-spinner";
 
 const AboutInfo = () => {
   const [aboutItem, setAboutItem] = useState();
-  const [personnels, setPersonnels] = useState();
-  const [achievements, setAchievements] = useState();
+  const [personnels, setPersonnels] = useState([]);
+  const [achievements, setAchievements] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const axiosInstance = axios.create({
     baseURL: import.meta.env.VITE_API_BASEURL,
@@ -272,23 +272,22 @@ const AboutInfo = () => {
               Our Achievements
             </span>
           </div>
-          {achievements && (
+          {achievements.length > 0 ? (
             <Carousel
               showDots={true}
               removeArrowOnDeviceType={["tablet", "mobile"]}
               responsive={responsive}
             >
               {achievements?.map((achievement) => (
-                <div
-                  key={achievement?._id}
-                  className="achi-item"
-                >
+                <div key={achievement?._id} className="achi-item">
                   <img src={achievement?.img} alt={achievement?.title} />
                   <span className="achi-title">{achievement?.title}</span>
                   <p className="body">{achievement?.desc}</p>
                 </div>
               ))}
             </Carousel>
+          ) : (
+            <div className="notFound">No achievement posted yet</div>
           )}
         </div>
       </div>
