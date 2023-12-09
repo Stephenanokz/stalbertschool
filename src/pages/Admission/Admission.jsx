@@ -1,48 +1,8 @@
-import React, { useRef, useState } from "react";
 import "./Admission.scss";
 import Banner from "../../components/Banner/Banner";
-import axios from "axios";
-import CloseIcon from "@mui/icons-material/Close";
 import Contact from "../Contact/Contact";
-import { Link } from "react-router-dom";
 
 const Admission = () => {
-  const [isSent, setIsSent] = useState(false);
-  const [isSending, setIsSending] = useState(false);
-  const axiosInstance = axios.create({
-    baseURL: import.meta.env.VITE_API_BASEURL,
-  });
-
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const subjectRef = useRef();
-  const messageRef = useRef();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const subject = subjectRef.current.value;
-    const message = messageRef.current.value;
-
-    try {
-      setIsSending(true);
-      const res = await axiosInstance.post(
-        "contactmails",
-        { name, email, subject, message },
-        {
-          headers: {
-            token: `Bearer ${import.meta.env.VITE_JWT_TOKEN}`,
-          },
-        }
-      );
-      res.data && setIsSent(true);
-    } catch (error) {
-      console.log(error);
-    }
-    setIsSending(false);
-  };
 
   return (
     <div className="admission">
@@ -50,29 +10,10 @@ const Admission = () => {
         title="Admission"
         subTitle="Come get your kid the best education"
       />
-      {/* {isSent && (
-        <div className="successOverlay">
-          <div className="successModal">
-            <CloseIcon
-              className="modalIcon"
-              onClick={() => {
-                setIsSent(false);
-              }}
-            />
-            <div className="message">
-              <span className="top">Thank you for your submission!</span>
-              <span className="bottom">
-                We've received your enquiry/complaint and will be in touch
-                shortly.
-              </span>
-            </div>
-          </div>
-        </div>
-      )} */}
       <div className="container" data-aos="zoom-in" data-aos-duration="500">
         <div className="section top">
           <div className="image">
-            <img src="/img/admission1.png" alt="admission 1" />
+            <img src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2Fadmission1.png?alt=media&token=d7fcca6d-da40-47e4-8c1a-664e1bcb3cb3" alt="admission 1" />
           </div>
           <div className="textContent">
             <div className="title">
@@ -102,7 +43,7 @@ const Admission = () => {
         </div>
         <div className="section bottom">
           <div data-aos="fade-up" data-aos-duration="1000" className="image">
-            <img src="/img/admission3.png" alt="admission2" />
+            <img src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2Fadmission3.png?alt=media&token=d7fcca6d-da40-47e4-8c1a-664e1bcb3cb3" alt="admission2" />
           </div>
           <div
             data-aos="fade-up"

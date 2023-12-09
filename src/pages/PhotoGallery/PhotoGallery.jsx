@@ -117,7 +117,7 @@ const Gallery = () => {
 
   return (
     <>
-      <Banner title="Our Gallery" subTitle="8 reasons to love our school." />
+      <Banner title="Our Gallery" subTitle="More reasons to love our school." />
       <div className="gallery">
         <div className="gallery-buttons">
           <button onClick={() => handleCategoryClick("All")}>All</button>

@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className={isScrolled ? `navbar scrolled` : `navbar`}>
       <div className="navbar__logo">
         <Link to="/">
-          <img src="/img/logo.png" alt="Logo" />
+          <img src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2Flogo.png?alt=media&token=7c76096a-f104-4dae-bf52-63ce4b8661f3" alt="Logo" />
           <span>St. Albert the Great School</span>
         </Link>
       </div>

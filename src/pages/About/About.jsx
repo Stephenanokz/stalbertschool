@@ -27,7 +27,7 @@ const About = ({ aboutItem }) => {
             </span>
             <div data-aos="fade-up" data-aos-duration="1000" className="author">
               <img
-                src="https://images.unsplash.com/photo-1523825036634-aab3cce05919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                src={aboutItem?.principalImgHome}
                 alt=""
               />
               <span>{aboutItem?.principalTitleHome}</span>

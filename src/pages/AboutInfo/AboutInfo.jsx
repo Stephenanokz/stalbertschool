@@ -116,7 +116,7 @@ const AboutInfo = () => {
           <div className="image">
             <span className="title">Meet the Principal</span>
             <div className="imgContainer">
-              <img src="img/pri.png" alt="principal" />
+              <img src={aboutItem?.principalImgAbout} alt="principal" />
               <div className="principal-title">
                 <span className="name">{aboutItem?.principalName}</span>
                 {aboutItem?.principalTitle && (
