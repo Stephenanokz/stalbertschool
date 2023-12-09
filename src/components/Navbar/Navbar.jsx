@@ -52,7 +52,7 @@ const Navbar = () => {
                   setIsDropped(!isDropped);
                 }}
               >
-                <Link to="/primary-portal">Primary Portal</Link>
+                <Link to="/primary-portal">Basic</Link>
               </li>
               <li
                 onClick={() => {
@@ -60,7 +60,7 @@ const Navbar = () => {
                   setIsDropped(!isDropped);
                 }}
               >
-                <Link to="/college-portal">College Portal</Link>
+                <Link to="/college-portal">College</Link>
               </li>
             </ul>
           </li>

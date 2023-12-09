@@ -5,7 +5,7 @@ import Banner from "../../components/Banner/Banner";
 const PortalSec = () => {
   return (
     <div className="PortalSec">
-      <Banner title="School Portal" subTitle="St. Albert Secondary school" />
+      <Banner title="College Portal" subTitle="St. Albert the great schools" />
       <div className="container">
         <div className="cardList">
           <div className="portalItem admin">

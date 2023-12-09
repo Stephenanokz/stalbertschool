@@ -43,10 +43,10 @@ const Footer = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/primary-portal">Primary Portal</Link>
+                <Link to="/primary-portal">Portal (Basic)</Link>
               </li>
               <li>
-                <Link to="/college-portal">College Portal</Link>
+                <Link to="/college-portal">Portal (College)</Link>
               </li>
             </ul>
           </div>
@@ -57,7 +57,10 @@ const Footer = () => {
             <div className="items">
               <div className="item">
                 <span className="title">Address:</span>
-                <span className="desc">No 24 Enugu Ozalla street, P.M.B 1010 Odume-Obosi Anambra state, Nigeria.</span>
+                <span className="desc">
+                  No 24 Enugu Ozalla street, P.M.B 1010 Odume-Obosi Anambra
+                  state, Nigeria.
+                </span>
               </div>
               <div className="item">
                 <span className="title">Email:</span>
