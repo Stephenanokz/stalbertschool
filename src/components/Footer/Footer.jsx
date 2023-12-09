@@ -43,7 +43,10 @@ const Footer = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/portal">Portal</Link>
+                <Link to="/primary-portal">Primary Portal</Link>
+              </li>
+              <li>
+                <Link to="/college-portal">College Portal</Link>
               </li>
             </ul>
           </div>

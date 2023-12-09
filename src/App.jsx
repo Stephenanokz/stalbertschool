@@ -14,6 +14,8 @@ import Post from "./pages/Post/Post";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Admission from "./pages/Admission/Admission";
+import PortalPri from "./pages/PortalPri/PortalPri";
+import PortalSec from "./pages/PortalSec/PortalSec";
 
 const Layout = () => {
 
@@ -65,6 +67,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactInfo />,
+      },
+      {
+        path: "/primary-portal",
+        element: <PortalPri />,
+      },
+      {
+        path: "/college-portal",
+        element: <PortalSec />,
       },
     ],
   },

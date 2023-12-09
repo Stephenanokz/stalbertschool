@@ -35,6 +35,24 @@
                 }
             }
         }
+
+        .navbar__menu {
+
+            ul {
+
+                li.nav-item {
+
+                    span {
+                        color: var(--gray-900);
+                    }
+                }
+            }
+
+            &.open {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
     }
 
     &__logo {
@@ -80,20 +98,68 @@
             // align-items: center;
             padding: 1rem;
 
-            li {
-                font-size: var(--h2-font-size);
+            li.nav-item {
+                position: relative;
+                font-size: var(--h3-font-size);
                 margin-bottom: 1rem;
 
                 a {
                     font-family: var(--sans-family);
-                    color: var(--gray-300);
-                    // font-weight: bold;
+                    color: var(--gray-100);
                     text-transform: capitalize;
                     text-decoration: none;
                     transition: color 0.3s ease-in-out;
 
                     &:hover {
-                        color: #f00;
+                        color: var(--secondary-color-light);
+                    }
+                }
+
+                span {
+                    color: var(--gray-100);
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: var(--secondary-color-light);
+                    }
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 150%;
+                    left: -50% 50px;
+                    background-color: var(--gray-300);
+                    list-style: none;
+                    padding: 0;
+                    width: max-content;
+                    z-index: var(--z-tooltip);
+
+                    li {
+                        margin: 0;
+
+                        a {
+                            display: block;
+                            padding: 0.5rem 1rem;
+                            color: var(--gray-100);
+                            text-decoration: none;
+                            transition: background-color 0.3s;
+                            font-size: var(--normal-font-size);
+                            font-weight: normal;
+                            background-color: var(--secondary-color-dark);
+
+                            &:hover {
+                                background-color: var(--secondary-color);
+                            }
+                        }
+                    }
+
+                    &.dropped {
+                        display: block;
                     }
                 }
             }
