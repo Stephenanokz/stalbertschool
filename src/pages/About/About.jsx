@@ -41,7 +41,7 @@ const About = ({ aboutItem }) => {
       <div className="bottom">
         <div data-aos="fade-up" data-aos-duration="1000" className="aboutItem">
           <img
-            src="https://www.freeiconspng.com/thumbs/technology-icon/computer-laptop-technology-icon-10.png"
+            src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2Fcomputer-laptop-technology-icon-10.png?alt=media&token=2cc41e86-9ba7-4abf-b303-47fa6016f1ea"
             alt=""
           />
           <span className="title">Creative & Tech Based</span>
@@ -54,7 +54,7 @@ const About = ({ aboutItem }) => {
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" className="aboutItem">
           <img
-            src="https://png.pngtree.com/element_origin_min_pic/16/08/18/1757b57a573e02a.jpg"
+            src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2F1757b57a573e02a.jpg?alt=media&token=c18275b2-2327-4f4b-9383-e9f602180fa9"
             alt=""
           />
           <span className="title">25+ years of experience</span>
@@ -67,7 +67,7 @@ const About = ({ aboutItem }) => {
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" className="aboutItem">
           <img
-            src="https://www.pngitem.com/pimgs/m/338-3382994_humor-erlenmeyer-flask-clipart-small-hd-png-download.png"
+            src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2F338-3382994_humor-erlenmeyer-flask-clipart-small-hd-png-download.png?alt=media&token=4aa7d15b-c3dd-4bbf-8714-1825daf58b07"
             alt=""
           />
           <span className="title">Modern Educational Facilities</span>
@@ -81,7 +81,7 @@ const About = ({ aboutItem }) => {
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" className="aboutItem">
           <img
-            src="https://www.pngkey.com/png/detail/260-2604481_building-clipart-black-and-white-building-clip-art.png"
+            src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2F260-2604481_building-clipart-black-and-white-building-clip-art.png?alt=media&token=b21346de-1940-4088-b3b2-c71009c8bbc9"
             alt=""
           />
           <span className="title">Best Infrastructure</span>
@@ -111,7 +111,7 @@ const About = ({ aboutItem }) => {
           <div data-aos="fade-up" data-aos-duration="1000" className="item">
             <div className="icon">
               <img
-                src="https://static.thenounproject.com/png/4351477-200.png"
+                src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2F4351477-200.png?alt=media&token=8972ef71-1261-4a09-ac3d-8de0a9cd8786"
                 alt=""
               />
             </div>
@@ -127,7 +127,7 @@ const About = ({ aboutItem }) => {
           <div data-aos="fade-up" data-aos-duration="1000" className="item">
             <div className="icon">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/2153/2153317.png"
+                src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2F2153317.png?alt=media&token=76493dae-48d2-46f0-861b-791fb2986211"
                 alt=""
               />
             </div>
@@ -143,7 +143,7 @@ const About = ({ aboutItem }) => {
           <div data-aos="fade-up" data-aos-duration="1000" className="item">
             <div className="icon">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/33/33887.png"
+                src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2F33887.png?alt=media&token=4352c0bf-e781-4c3c-b2ce-105a4bfa1e51"
                 alt=""
               />
             </div>
