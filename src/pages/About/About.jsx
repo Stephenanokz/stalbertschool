@@ -18,7 +18,7 @@ const About = ({ aboutItem }) => {
           <div data-aos="fade-up" data-aos-duration="1000" className="left">
             <img
               src={aboutItem?.schoolImage}
-              alt=""
+              alt="school"
             />
           </div>
           <div className="right">
@@ -28,7 +28,7 @@ const About = ({ aboutItem }) => {
             <div data-aos="fade-up" data-aos-duration="1000" className="author">
               <img
                 src={aboutItem?.principalImgHome}
-                alt=""
+                alt="principal"
               />
               <span>{aboutItem?.principalTitleHome}</span>
               <Link to="/about">
