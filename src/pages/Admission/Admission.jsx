@@ -13,7 +13,7 @@ const Admission = () => {
       <div className="container" data-aos="zoom-in" data-aos-duration="500">
         <div className="section top">
           <div className="image">
-            <img src="https://ik.imagekit.io/verbum0179/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2Fadmission1.png?alt=media&token=d7fcca6d-da40-47e4-8c1a-664e1bcb3cb3" alt="admission 1" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/stalbertschool-351e8.appspot.com/o/imgs%2Fadmission1.png?alt=media&token=d7fcca6d-da40-47e4-8c1a-664e1bcb3cb3" alt="admission 1" />
           </div>
           <div className="textContent">
             <div className="title">
